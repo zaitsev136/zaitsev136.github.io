@@ -1,2 +1,84 @@
-<h1> Hello World! </h1>
-<p> Git page example </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <title>JSROOT Hello world</title>
+
+   <script src="./jsroot570/scripts/JSRootCore.min.js" type="text/javascript"></script>
+
+   <script type='text/javascript'>
+     // absolute file path can be used as well
+     var filename = "./hist.root";
+     JSROOT.OpenFile(filename, function(file) {
+        file.ReadObject("h;1", function(obj){
+          JSROOT.draw("dra1", obj, "colz");
+          JSROOT.draw("dra2", obj, "lego");
+          JSROOT.draw("dra3", obj, "lego1");
+          JSROOT.draw("dra4", obj, "lego2");
+          JSROOT.draw("dra5", obj, "surf");
+          JSROOT.draw("dra6", obj, "surf2");
+          JSROOT.draw("dra7", obj, "box");
+          JSROOT.draw("dra8", obj, "cont");
+          JSROOT.draw("dra9", obj, "cont0");
+          JSROOT.draw("dra10", obj, "cont1");
+          JSROOT.draw("dra11", obj, "col");
+          JSROOT.draw("dra12", obj, "cont4");
+        });
+     });
+   </script>
+
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <div id="dra1" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra2" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra3" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra4" style="width:400px; height:300px"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="dra5" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra6" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra7" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra8" style="width:400px; height:300px"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="dra9" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra10" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra11" style="width:400px; height:300px"></div>
+      </td>
+      <td>
+        <div id="dra12" style="width:400px; height:300px"></div>
+      </td>
+    </tr>
+  </table>
+</body>
+
+
+
+</html>
