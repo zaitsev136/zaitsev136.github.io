@@ -14,7 +14,7 @@
       // load geometry from ROOT file
       JSROOT.OpenFile(geom_file, function(file) {
          file.ReadObject("VGM Root geometry;1", function(item){
-         	JSROOT.draw("drawing", item, "same");
+         	JSROOT.draw("drawing", item, "transp50;zoom50;nohighlight;tracks");
          });
       });
    </script>
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <div id="drawing" style="width:800px; height:600px"></div>
+  <div id="drawing" style="width:1000px; height:750px"></div>
 </body>
 
 </html>
