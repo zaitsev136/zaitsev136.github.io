@@ -14,7 +14,7 @@
       // load geometry from ROOT file
       JSROOT.OpenFile(geom_file, function(file) {
          file.ReadObject("VGM Root geometry;1", function(item){
-         	JSROOT.draw("drawing", item, "transp50;zoom50;nohighlight;tracks");
+         	JSROOT.draw("drawing", item, "transp50;zoom50;nohighlight;tracks;clipy");
          });
       });
    </script>
